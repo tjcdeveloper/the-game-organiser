@@ -1,0 +1,29 @@
+.content-box {
+    width: 100%;
+    background: $primaryBackground;
+
+    > header, > .content-box-header {
+        padding: 2rem;
+        border-bottom: 2px solid $primaryHighlight;
+
+        h1 {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-style: italic;
+        }
+    }
+
+    > main, > .content-box-main {
+        padding: 2rem;
+    }
+
+    p {
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+}
