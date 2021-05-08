@@ -1,6 +1,7 @@
 @import "variables";
 @import "~bulma/sass/base/minireset";
 @import "~bulma/sass/utilities/_all";
+@import "~bulma/sass/helpers/float";
 
 @import "base";
 
@@ -8,7 +9,9 @@
 @import "~bulma/sass/elements/button";
 @import "~bulma/sass/form/_all";
 
+@import "components/button";
 @import "components/content-box";
 @import "components/forms";
+@import "components/hyperlinks";
 @import "components/link-btn";
 @import "components/side-bar";

@@ -157,6 +157,20 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
   width: 1em;
 }
 
+.is-clearfix::after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+
+.is-pulled-left {
+  float: left !important;
+}
+
+.is-pulled-right {
+  float: right !important;
+}
+
 html {
   font-size: 12px;
   font-family: Helvetica, ui-sans-serif, sans-serif;
@@ -2867,6 +2881,15 @@ fieldset {
   font-size: 2rem;
 }
 
+.button.button-wide {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.align-text-button-base {
+  padding-top: 2rem;
+}
+
 .content-box {
   width: 100%;
   background: #221E24;
@@ -2897,6 +2920,11 @@ fieldset {
   margin-bottom: 2rem;
 }
 
+.content-box.content-box-w40 {
+  width: 40rem;
+  margin: 0 auto;
+}
+
 form .field.is-grouped label.label {
   margin-bottom: 0;
   display: flex;
@@ -2906,6 +2934,19 @@ form .field.is-grouped label.label {
 
 form .field.is-grouped .control input.input {
   min-width: 30rem;
+}
+
+a {
+  color: #DCD5E1;
+  text-decoration: none;
+}
+
+a:not(.button) {
+  font-style: italic;
+}
+
+a:hover, a:active, a:focus {
+  color: #FFF;
 }
 
 .link-btn {
