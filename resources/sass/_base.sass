@@ -1,0 +1,66 @@
+html
+    font-size: 12px
+    // Set the base REM size
+    font-family: $family-sans-serif
+    background: $baseBackground
+    color: $baseFontColor
+    webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+fieldset
+    border: none
+
+.grid-main-structure
+    display: grid
+    font-size: 1.5rem
+    min-height: 100vh
+    align-items: stretch
+    grid-template-columns: 21rem auto
+    grid-template-rows: 8rem auto 4rem
+    grid-template-areas: ". ." ". ." "footer footer"
+
+    > nav
+        &.user-card
+            display: flex
+            flex-direction: row-reverse
+            background: $primaryItem
+            border-bottom: 2px solid $primaryBackground
+            border-right: 2px solid $primaryBackground
+            padding: 1rem
+
+            > .user-card-left
+                width: 6rem
+                border-radius: 3rem
+
+            > .user-card-right
+                flex-grow: 1
+
+                > *
+                    max-height: 2.5rem
+
+                    &:last-child
+                        margin-top: calc(1rem - 2px)
+        // Remove 2px to account for the border-bottom on user-card
+
+        &.nav-bar
+            background: $primaryBackground
+
+    > header
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        background: $primaryItem
+        border-bottom: 2px solid $primaryBackground
+
+        > img
+            height: 8rem
+
+    > main
+        padding: 1.5rem
+
+    > footer
+        grid-area: footer
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $primaryBackground

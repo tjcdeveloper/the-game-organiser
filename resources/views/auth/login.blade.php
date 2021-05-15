@@ -8,7 +8,7 @@
     <!-- Validation Errors -->
     <x-auth-validation-errors class="mb-4" :errors="$errors"/>
 
-    <div class="content-box content-box-w40">
+    <div class="content-box w40-center">
         <div class="content-box-header">
             <h1>Log In</h1>
         </div>
