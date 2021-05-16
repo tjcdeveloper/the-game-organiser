@@ -4,10 +4,10 @@
     <!-- Validation Errors -->
     <x-form-errors class="w40-center" :errors="$errors"/>
     <div class="content-box w40-center">
-        <div class="content-box-header">
+        <header class="content-box-header">
             <h1>{{ __('Register') }}</h1>
-        </div>
-        <div class="content-box-main">
+        </header>
+        <main class="content-box-main">
             <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="field">
@@ -40,6 +40,6 @@
                     </a>
                 </div>
             </form>
-        </div>
+        </main>
     </div>
 @endsection
