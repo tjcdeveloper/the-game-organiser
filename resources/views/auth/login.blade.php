@@ -20,7 +20,7 @@
                 <div class="field">
                     <label class="label" for="email">Email</label>
                     <input id="email" class="input" type="email" name="email" value="{{ old('email') }}" required
-                           autofocus/>
+                           autofocus autocomplete="email"/>
                 </div>
 
                 <!-- Password -->

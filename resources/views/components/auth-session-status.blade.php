@@ -1,7 +1,5 @@
-@props(['status'])
-
-@if ($status)
-    <div {{ $attributes->merge(['class' => 'font-medium text-sm text-green-600']) }}>
-        {{ $status }}
-    </div>
+@if ($status->any())
+    <x-bulma-message {{ $attributes->merge(['class' => 'is-success-dark']) }} :messages="$status">
+        {{ __('Success') }}
+    </x-bulma-message>
 @endif

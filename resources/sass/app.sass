@@ -11,7 +11,7 @@
 @import "~bulma/sass/elements/other"
 @import "~bulma/sass/form/_all"
 
-$message-colors: mergeColorMaps($colors, ("danger-dark": (bulmaDarken($danger-dark, 20%), findColorInvert($danger-dark), $danger-dark, findColorInvert($danger-dark))))
+$message-colors: mergeColorMaps($colors, ("danger-dark": (bulmaDarken($danger-dark, 20%), findColorInvert($danger-dark), $danger-dark, findColorInvert($danger-dark)), "success-dark": (bulmaDarken($success-dark, 20%), findColorInvert($success-dark), $success-dark, findColorInvert($success-dark))))
 @import "~bulma/sass/components/message"
 .message-header
     .delete
