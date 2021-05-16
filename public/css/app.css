@@ -2218,6 +2218,13 @@ fieldset {
 .grid-main-structure > nav.user-card > .user-card-left {
   width: 6rem;
   border-radius: 3rem;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.grid-main-structure > nav.user-card > .user-card-left > * {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .grid-main-structure > nav.user-card > .user-card-right {
