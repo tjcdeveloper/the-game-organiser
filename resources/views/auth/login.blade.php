@@ -3,7 +3,7 @@
 @section('main')
 
     <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')"/>
+    <x-auth-session-status class="w40-center"/>
 
     <!-- Validation Errors -->
     <x-form-errors class="w40-center" :errors="$errors"/>
