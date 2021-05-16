@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::post('/mailing/signup', ['as' => 'mailingSignup']);
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    return view('home');
+})->middleware(['verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
