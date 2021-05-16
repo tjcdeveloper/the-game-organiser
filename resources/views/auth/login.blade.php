@@ -6,7 +6,7 @@
     <x-auth-session-status class="mb-4" :status="session('status')"/>
 
     <!-- Validation Errors -->
-    <x-auth-validation-errors class="mb-4" :errors="$errors"/>
+    <x-form-errors class="w40-center" :errors="$errors"/>
 
     <div class="content-box w40-center">
         <div class="content-box-header">

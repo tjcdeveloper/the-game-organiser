@@ -24,7 +24,7 @@
         @endauth
     </nav>
     <header>
-        <img src="/images/the-game-organiser-logo-alpha.png" alt="The Game Organiser Alpha Test Logo">
+        <img src="{{ asset('/images/the-game-organiser-logo-alpha.png') }}" alt="The Game Organiser Alpha Test Logo">
     </header>
     <nav class="nav-bar">
         <!-- TODO: NAV BAR -->
@@ -34,7 +34,7 @@
         @yield('main')
     </main>
     <footer class="text-center">
-        Copyright &copy; 2021 Tony Christopher. All rights reserved.
+        {{ __('Copyright') }} &copy; 2021{{ date('Y') === '2021' ? '' : ' - ' . date('Y') }} {{ config('app.name') }}. {{ __('All rights reserved.') }}
     </footer>
 </body>
 </html>
